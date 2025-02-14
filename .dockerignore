@@ -1,0 +1,35 @@
+# Ignore vendor directory, since dependencies are installed in the Docker image
+/vendor
+
+# Ignore node_modules (if you have frontend dependencies)
+node_modules
+
+# Ignore .env files, as they should not be copied into the Docker image
+.env
+.env.local
+.env.*.local
+
+# Ignore log files
+/storage/*.log
+
+# Ignore compiled files (such as caching files)
+/bootstrap/cache/*
+
+# Ignore IDE or editor-specific files
+.idea
+.vscode
+*.sublime-workspace
+*.sublime-project
+
+# Ignore operating system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore test files and directories
+/tests
+*.phar
+
+# Ignore any other local files that should not be included
+*.git
+*.gitignore
+*.editorconfig
